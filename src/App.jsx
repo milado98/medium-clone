@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "./components/NavBar";
+import Navbar from "./components/NavBar";
 import PostCard from "./components/PostCard";
 import Sidebar from "./components/Sidebar";
 import { posts } from "./data";
@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen text-gray-900">
-      <NavBar />
+      <Navbar />
       <main className="pl-4 lg:pl-40 pr-4 sm:pr-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-10 gap-8">
           {/* Posts section */}

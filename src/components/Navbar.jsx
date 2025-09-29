@@ -2,7 +2,7 @@ import React from "react";
 import { FiMenu, FiSearch, FiEdit, FiBell } from "react-icons/fi";
 import logo from "../assets/logo.png";
 
-export default function NavBar() {
+export default function Navbar() {
   return (
     <nav className="w-full border-b bg-white sticky top-0 z-30">
       <div className="mx-auto px-2 md:px-6 lg:px-8">
