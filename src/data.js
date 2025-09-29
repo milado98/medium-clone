@@ -55,7 +55,7 @@ export const posts = [
     },
     {
       id: 5,
-      author: "Jim the AI Whisperer",
+      author: "Jim the",
       title: "Want to see how insanely stupid AI really is? Ask ChatGPT to answer these riddles in just one word",
       desc: "Limiting output length reveals AI isn't intelligent- it's chatty!",
       date: "3d ago",
@@ -75,7 +75,7 @@ export const posts = [
       author: "Zulie @ Medium",
       title: "How this brand strategist uses Medium to explore ideas, repurpose content and land clients",
       date: "2d ago",
-      group: "The Medium handbook",
+      group: "The handbook",
       groupImage: logo,
     },
     {
