@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/merriweather/400.css";
+@import "@fontsource/merriweather/700.css";
+
+/* Apply defaults */
+body {
+  @apply font-serif; /* body text defaults to Merriweather */
+}
+
+/* src/index.css */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold; /* Titles use Merriweather */
+  }
+
+  nav, button, input, .sidebar, .meta {
+    @apply font-sans; /* UI text uses Inter */
+  }
+}
+
+
+/* helper for two-line clamp */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.post-title {
+  @apply text-base lg:text-2xl text-black font-bold 
+}
+
+.staff-title {
+  @apply text-base text-black font-bold 
+}
+
+
+.desc {
+  @apply text-xs lg:text-base text-gray-500 mt-3
+}
+
+/* Layout helpers */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flex-start {
+  @apply flex items-start;
+}
+
+/* Text styles */
+.meta-text {
+  @apply text-xs lg:text-sm text-gray-600;
+}
+
+.text-muted {
+  @apply text-sm text-gray-500;
+}
+
+.text-author {
+  @apply text-gray-900 text-xs lg:text-base;
+}
+
+/* Buttons */
+.icon-btn {
+  @apply p-2 rounded-md hover:bg-gray-100;
+}
+
+.icon-btn-sm {
+  @apply p-1 rounded-md hover:bg-gray-100;
+}
+
+.pill-btn {
+  @apply text-sm px-3 py-2 rounded-full border-2 border-black;
+}
+
+.topic-btn {
+  @apply text-sm px-4 py-3 bg-gray-100 font-sans rounded-full;
+}
+
+/* Avatar */
+.avatar-sm {
+  @apply w-5 h-5 rounded-full object-cover;
+}
+
+.avatar-md {
+  @apply w-7 h-7 aspect-square rounded-full bg-gray-300;
+}
+
+/* Titles */
+.section-title {
+  @apply font-semibold mb-5;
+}
+
+/* Card utilities */
+.card-divider {
+  @apply border-t mt-4;
+}
